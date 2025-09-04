@@ -19,17 +19,25 @@ export default function Dashboard() {
                     <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
                         <div className="absolute inset-0 size-full stroke-neutral-900/20 p-4 dark:stroke-neutral-100/20">
                             Create new Component with a single drop down. Items should be fetched from the server via following API:{' '}
-                            <code>GET /api/items</code> Place component in the container below this. Selecting an item from drop down should display
-                            result in the right container. Center results vertically and horizontally.
+                            <code>GET /api/items</code> You can use simple fetch request to get the data. <br />
+                            Use shacdn{' '}
+                            <a className="text-blue-500" href="https://ui.shadcn.com/docs/components/select" target="_blank" rel="noreferrer">
+                                Select component.
+                            </a>
+                            <br />
+                            Place component in the container right to this. Selecting an item from drop down should display result in the bottom
+                            container.
+                            <br />
+                            Center results vertically and horizontally.
                         </div>
                     </div>
                     <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
-                        <div className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20"></div>
+                        <div className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
                     </div>
                 </div>
-                <div className="relative min-h-[100vh] flex-1 overflow-hidden rounded-xl border border-sidebar-border/70 md:min-h-min dark:border-sidebar-border">
-                    <div className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20"></div>
-                </div>
+            </div>
+            <div className="relative min-h-[100vh] flex-1 overflow-hidden rounded-xl border border-sidebar-border/70 md:min-h-min dark:border-sidebar-border">
+                <div className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
             </div>
         </AppLayout>
     );
